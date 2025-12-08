@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "site",
+        "value": {
+            "title": "易航网址导航系统",
+            "subtitle": "",
+            "keywords": "易航,网址导航,易航网址导航系统,网址引导页,易航网址引导页,易航网址引导系统",
+            "description": "易航网址导航提供一些在线实用工具，在线娱乐游戏，精品网站源码和API接口",
+            "qq": "2136118039",
+            "favicon": "/favicon.ico",
+            "logo": "/favicon.ico",
+            "icp": "冀ICP备2021010323号",
+            "copyright": "© 2022-2024 <a href=\"http://www.bri6.cn\">易航网址导航系统</a> All Rights Reserved",
+            "create_date": "2022-11-08"
+        },
+        "update_time": "2024-09-14 19:44:51"
+    },
+    {
+        "id": 2,
+        "name": "current_theme",
+        "value": "SunPanel",
+        "update_time": "2024-08-16 12:05:08"
+    },
+    {
+        "id": 5,
+        "name": "admin",
+        "value": {
+            "captcha": "1",
+            "loading": "1",
+            "background": ""
+        },
+        "update_time": "2024-09-14 19:44:51"
+    },
+    {
+        "id": 6,
+        "name": "mail",
+        "value": {
+            "smtp": "smtp.88.com",
+            "secure": "ssl",
+            "port": "465",
+            "name": "xh8039@88.com",
+            "pwd": "abc",
+            "recv": ""
+        },
+        "update_time": "2024-09-14 19:44:51"
+    },
+    {
+        "name": "theme",
+        "value": {
+            "cdn": "https://cdn.bootcdn.net/ajax/libs/",
+            "background": ""
+        },
+        "id": 8,
+        "create_time": "2023-04-05 22:26:30",
+        "update_time": "2024-09-14 19:44:51"
+    },
+    {
+        "name": "system",
+        "value": {
+            "ip_type": "3",
+            "rewrite": "1"
+        },
+        "id": 11,
+        "create_time": "2024-09-14 19:43:04",
+        "update_time": "2024-09-14 19:44:51"
+    }
+]

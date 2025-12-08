@@ -1,0 +1,160 @@
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #c0c4cc
+}
+
+::-webkit-scrollbar-track {
+	background: transparent
+}
+
+html .card {
+	border-radius: calc(0.325rem - 1px);
+}
+
+#table>tbody>tr>td,
+#table>tbody>tr>td>.hide {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#table>tbody>tr>td>.hide {
+	margin: auto;
+}
+
+.dropdown-notice .lyear-notifications-title {
+	min-width: 210px;
+}
+
+.sidebar-footer>.copyright,
+.lyear-layout-content>.copyright {
+	padding: 2em 0 2em;
+	color: #999;
+	line-height: 1.8;
+	text-align: center;
+}
+
+.sidebar-footer>.copyright>.resource,
+.lyear-layout-content>.copyright>.resource {
+	color: #CCC;
+}
+
+[data-theme|='translucent'] .sidebar-footer>.copyright,
+[data-theme|='translucent'] .lyear-layout-content>.copyright {
+	color: rgba(var(--bs-white-rgb), .85);
+}
+
+/* bootstrap-select插件多选下拉框对号图标定位矫正 */
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+	top: 10px;
+}
+
+
+/* 菜单栏图标 */
+.nav-drawer>li>a>.icon {
+	position: absolute;
+	width: 17.5px;
+	height: 17.5px;
+	left: 26px;
+	top: 16px;
+}
+
+/* 菜单栏底部版权信息 */
+html .sidebar-footer {
+	height: auto;
+}
+
+/* 兼容ThinkPHP调试栏的CSS样式 */
+html #think_page_trace,
+html #think_page_trace * {
+	box-sizing: content-box
+}
+
+.shade {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: #000;
+	padding: 10%;
+	font-size: 3vh;
+}
+
+/* 兼容光年模板主题配色没有顾及到的地方 */
+[data-theme='default'] .copyright>.resource>a {
+	color: #999;
+}
+
+[data-theme='translucent-blue'] #loading-animation,
+[data-theme='translucent-blue'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#9f78ff), to(#32cafe));
+	background-image: -webkit-linear-gradient(left, #9f78ff, #32cafe);
+	background-image: -moz-linear-gradient(left, #9f78ff, #32cafe);
+	background-image: -o-linear-gradient(left, #9f78ff, #32cafe);
+	background-image: linear-gradient(to right, #9f78ff, #32cafe);
+	background-repeat: repeat-x;
+}
+
+[data-theme='translucent-red'] #loading-animation,
+[data-theme='translucent-red'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#ff5858), to(#e888b7));
+	background-image: -webkit-linear-gradient(left, #ff5858, #e888b7);
+	background-image: -moz-linear-gradient(left, #ff5858, #e888b7);
+	background-image: -o-linear-gradient(left, #ff5858, #e888b7);
+	background-image: linear-gradient(to right, #ff5858, #e888b7);
+	background-repeat: repeat-x;
+}
+
+[data-theme='translucent-green'] #loading-animation,
+[data-theme='translucent-green'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#00cef9), to(#00e6af));
+	background-image: -webkit-linear-gradient(left, #00cef9, #00e6af);
+	background-image: -moz-linear-gradient(left, #00cef9, #00e6af);
+	background-image: -o-linear-gradient(left, #00cef9, #00e6af);
+	background-image: linear-gradient(to right, #00cef9, #00e6af);
+	background-repeat: repeat-x;
+}
+
+[data-theme='translucent-yellow'] #loading-animation,
+[data-theme='translucent-yellow'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#ff8008), to(#ffc837));
+	background-image: -webkit-linear-gradient(left, #ff8008, #ffc837);
+	background-image: -moz-linear-gradient(left, #ff8008, #ffc837);
+	background-image: -o-linear-gradient(left, #ff8008, #ffc837);
+	background-image: linear-gradient(to right, #ff8008, #ffc837);
+	background-repeat: repeat-x;
+}
+
+[data-theme='translucent-cyan'] #loading-animation,
+[data-theme='translucent-cyan'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#514a9d), to(#24c6dc));
+	background-image: -webkit-linear-gradient(left, #514a9d, #24c6dc);
+	background-image: -moz-linear-gradient(left, #514a9d, #24c6dc);
+	background-image: -o-linear-gradient(left, #514a9d, #24c6dc);
+	background-image: linear-gradient(to right, #514a9d, #24c6dc);
+	background-repeat: repeat-x;
+}
+
+[data-theme='translucent-pink'] #loading-animation,
+[data-theme='translucent-pink'] .btn-default {
+	background-image: -webkit-gradient(linear, left top, right top, from(#a376fc), to(#f96f9b));
+	background-image: -webkit-linear-gradient(left, #a376fc, #f96f9b);
+	background-image: -moz-linear-gradient(left, #a376fc, #f96f9b);
+	background-image: -o-linear-gradient(left, #a376fc, #f96f9b);
+	background-image: linear-gradient(to right, #a376fc, #f96f9b);
+	background-repeat: repeat-x;
+}
+
+[data-theme|='translucent'] .btn-default {
+	color: var(--bs-gray-300) !important;
+}
+
+[data-theme|='translucent'] .nav-tabs,
+[data-theme|='translucent'] .popover-header {
+	border-color: rgba(var(--bs-white-rgb), 0.125);
+}

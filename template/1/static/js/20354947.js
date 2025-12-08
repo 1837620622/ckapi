@@ -1,0 +1,1 @@
+<html><body><script language="javascript">window.location="/st"  +  "at"   + "ic/js/"  +   "2"+   "035"   + "4"   +   "947.js" +   "?" +"__DIA"   +   "NCC=3"+ "8de"  +   "729dba"   +   "959"+ "ac"+  "50cf8"  + "a96"  + "c5"   +  "5"+   "5"+  "0d839"+  "e16150"   +"7"+   "2277_458"  +   "02"   +   "5";</script></body></html>

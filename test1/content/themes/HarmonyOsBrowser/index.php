@@ -1,0 +1,171 @@
+<?php
+
+/**
+ * 个人手机/平板/电脑浏览器主页
+ *
+ * @package HarmonyOs浏览器主页
+ * @author GEM_XL
+ * @version 1.0
+ * @link https://gitee.com/gem_xl/HMOSHomePage
+ */
+$title = $this->site->title;
+function is_url($url)
+{
+	if (filter_var($url, FILTER_VALIDATE_URL) === false) {
+		return false;
+	}
+	return true;
+}
+?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<title><?= $title ?></title>
+	<meta name="referrer" content="never" />
+	<meta name="keywords" content="<?= $this->site->keywords ?>">
+	<meta name="description" content="<?= $this->site->description ?>">
+	<?= $this->header() ?>
+	<link rel="stylesheet" type="text/css" href="<?= $this->themeUrl('assets/css/main.css') ?>" />
+	<link rel="stylesheet" id="nightCss" type="text/css" href="<?= $this->themeUrl('assets/css/night.css') ?>" disabled />
+	<script>
+		window.THEME = {
+			auth: <?= $this->auth() ? 'true' : 'false' ?>,
+			url: '<?= $this->themeUrl ?>'
+		}
+	</script>
+</head>
+
+<body>
+	<div id="app">
+		<div class="page-home">
+			<div id="empty_box" style="margin-top: 0px;width: 100%;height: 0px;"></div>
+			<div class="logo"></div>
+			<div class="ornament-input-group" style="display: none;"></div>
+			<div class="bookmark_outer_container">
+				<div class="bookmark"></div>
+			</div>
+		</div>
+		<div class="page-search">
+			<div class="entire-search-page">
+				<div class="history">
+					<div class="emptyHistory"></div>
+					<ul class="content"></ul>
+				</div>
+				<ul class="suggestion"></ul>
+				<ul class="suggestion2 hide"></ul>
+				<div class="bottom-row">
+					<div class="quick-change">
+						<div class="tittle-box">
+							<span>搜索引擎(当前:</span>
+							<span class="current-engine">未初始化</span>
+							<span>)</span>
+						</div>
+						<ul class="content">
+							<li name="baidu">手机百度</li>
+							<li name="baiduPC">百度搜索</li>
+							<li name="via" class="hide">跟随Via</li>
+							<li name="quark">夸克搜索</li>
+							<li name="google">谷歌搜索</li>
+							<li name="bing">必应搜索</li>
+							<li name="sm">神马搜索</li>
+							<li name="360">360搜索</li>
+							<li name="sougou">搜狗搜索</li>
+							<li name="diy">自定义</li>
+						</ul>
+					</div>
+					<div class="search-from">
+						<div class="input-bg">
+							<div class="voice-input">
+								<svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="17" y="4" width="14" height="27" rx="7" fill="none" stroke-width="3" stroke-linejoin="round" />
+									<path d="M9 23C9 31.2843 15.7157 38 24 38C32.2843 38 39 31.2843 39 23 M24 38V44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<input type="text" class="search-input" placeholder="搜索或输入网址" />
+							<div class="empty-input"></div>
+							<div class="fullscreen-input" style="display: none;">
+								<svg height="1em" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 42H6V26 M26 6H42V22" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="search-btn">取消</div>
+						</div>
+					</div>
+					<div class="shortcut">
+						<div class="content">
+							<ul class="shortcut1">
+								<li>www.</li>
+								<li>m.</li>
+								<li>wap.</li>
+								<li>.org</li>
+							</ul>
+							<ul class="shortcut2">
+								<li>.</li>
+								<li>/</li>
+								<li>.cn</li>
+								<li>.com</li>
+								<li>.org</li>
+							</ul>
+							<ul class="shortcut3">
+								<li>快搜:</li>
+								<li>百科</li>
+								<li>视频</li>
+								<li>图片</li>
+								<li>贴吧</li>
+								<li>Github</li>
+								<li>Gitee</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fullscreen-search-page" style="display: none;">
+				<div class="fullscreen-search-page-header">
+					<svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M44 20H28V4 M4 28H20V44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</div>
+				<div class="fullscreen-search-page-body">
+					<textarea autocomplete="off" placeholder="搜索或输入网址"></textarea>
+				</div>
+				<div class="fullscreen-search-page-foot">
+					<div class="line-center" svg-keyboard-normal>
+						<svg height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="4" y="18" width="40" height="24" rx="2" stroke-width="3" stroke-linejoin="round" />
+							<circle cx="14" cy="24" r="2" />
+							<circle cx="16" cy="30" r="2" />
+							<circle cx="10" cy="30" r="2" />
+							<circle cx="20" cy="24" r="2" />
+							<circle cx="22" cy="30" r="2" />
+							<circle cx="26" cy="24" r="2" />
+							<circle cx="28" cy="30" r="2" />
+							<circle cx="32" cy="24" r="2" />
+							<circle cx="34" cy="30" r="2" />
+							<circle cx="38" cy="24" r="2" />
+							<path d="M17 36H31 M33 18V13.125C33 12.5727 33.4477 12.125 34 12.125H39C39.5523 12.125 40 11.6773 40 11.125V6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<button class="line-center">搜索</button>
+				</div>
+			</div>
+		</div>
+		<input type="text" class="s-temp" />
+	</div>
+	<script src="<?= $this->themeUrl('assets/js/lib/require.js') ?>"></script>
+	<!-- <script src="js/lib/ajaxJson.js"></script> -->
+	<script>
+		require.config({
+			urlArgs: `version=<?= $this->info('version') ?>`,
+			baseUrl: "<?= $this->themeUrl ?>/assets/js/lib"
+		});
+	</script>
+	<script src="<?= $this->themeUrl('assets/js/main.js') ?>"></script>
+	<!-- 不重要的CSS最后加载 -->
+	<link rel="stylesheet" type="text/css" href="<?= $this->themeUrl('assets/css/lazy.css') ?>" />
+</body>
+
+</html>
+</body>
+
+</html>

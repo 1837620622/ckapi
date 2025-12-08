@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #c0c4cc
+}
+
+::-webkit-scrollbar-track {
+	background: transparent
+}
+
+.main {
+	height: calc(100vh - 60px);
+	display: flex;
+	justify-content: center;
+}
+
+#player,
+#dplayer,
+#img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+}
+
+.btn-g {
+	margin: auto;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	max-width: 500px;
+}
+
+
+.url>a {
+	margin-right: 0.5rem;
+	text-decoration: none;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn:active {
+	box-shadow: none;
+}
+
+.tishi {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	padding: 1rem 5%;
+	background-color: rgb(0, 0, 0, 0.7);
+	display: none;
+}
+
+.tishi>p {
+	display: block;
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 1rem;
+	float: left;
+}
+
+#gb-ts {
+	display: block;
+	background-color: transparent;
+	font-size: 35px;
+	outline: none;
+	border: none;
+	color: #fff;
+	line-height: 20px;
+	float: right;
+}

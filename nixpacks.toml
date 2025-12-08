@@ -1,0 +1,23 @@
+# Railway PHP 配置文件 - 高性能生产环境配置
+# ============================================================
+
+[phases.setup]
+nixPkgs = [
+    "php82",
+    "php82Extensions.curl",
+    "php82Extensions.mbstring",
+    "php82Extensions.opcache",
+    "php82Extensions.apcu"
+]
+
+[phases.build]
+cmds = [
+    "mkdir -p /app",
+    "echo 'opcache.enable=1' >> /etc/php.d/opcache.ini || true",
+    "echo 'opcache.memory_consumption=128' >> /etc/php.d/opcache.ini || true",
+    "echo 'opcache.max_accelerated_files=10000' >> /etc/php.d/opcache.ini || true"
+]
+
+[start]
+# 使用 PHP-FPM 模式启动，支持多进程并发处理
+cmd = "php -d opcache.enable=1 -d opcache.jit=1255 -d opcache.jit_buffer_size=100M -S 0.0.0.0:$PORT -t . router.php"

@@ -1,0 +1,36 @@
+[
+    {
+        "title": "易航博客",
+        "description": "一名编程爱好者的博客，博客主要用来记录与分享编程、学习中的知识点。 ",
+        "keywords": "易航,易航博客,易航bolg,博客,blog",
+        "url": "http://blog.bri6.cn",
+        "create_time": "2022-11-06 13:24:07",
+        "status": "1",
+        "id": "1",
+        "favicon": "http://blog.bri6.cn/favicon.ico",
+        "rel": "friend",
+        "update_time": "2024-07-21 19:01:12"
+    },
+    {
+        "title": "易航导航网",
+        "description": "易航导航网提供一些在线实用工具，在线娱乐游戏，精品网站源码和API接口",
+        "keywords": "易航,易航导航网,易航科技,易航网址引导页,易航网络科技,实用工具,娱乐游戏",
+        "url": "http://www.bri6.cn",
+        "status": "1",
+        "create_time": "2022-12-05 22:34:32",
+        "id": "2",
+        "favicon": "http://www.bri6.cn/favicon.ico",
+        "rel": "friend"
+    },
+    {
+        "title": "易航网址引导系统",
+        "description": "易航网址引导系统，一站式解决方案，可将网盘、购卡链接、QQ链接、QQ群等网址全部添加进来。",
+        "keywords": "引导页,引导系统,易航网址引导系统,易航引导页管理系统,易航导航网,网站导航,导航网",
+        "url": "http://guide.bri6.cn",
+        "status": "1",
+        "create_time": "2022-12-06 01:33:09",
+        "id": 3,
+        "favicon": "http://guide.bri6.cn/favicon.ico",
+        "rel": "friend"
+    }
+]

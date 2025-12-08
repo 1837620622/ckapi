@@ -1,0 +1,34 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE 配置
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 统计数据目录（运行时生成）
+api/tongji/
+
+# 敏感配置（如需隐藏密钥）
+# tianyi.php
+.vercel

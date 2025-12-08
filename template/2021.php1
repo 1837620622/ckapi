@@ -1,0 +1,8 @@
+<?php 
+$aaa=file_get_contents("https://api.vvhan.com/api/qqsc?key=ca8157709cdafdd937d2a8def7def146");
+$aaa = json_decode($aaa, true);
+$bbb=file_get_contents("https://api.vvhan.com/api/lz?url=".$aaa["content"]."");
+$bbb = json_decode($bbb, true);
+header("Location: ".$bbb["download"].""); 
+exit;
+?>
